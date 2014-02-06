@@ -1,0 +1,13 @@
+Index: darkice-0.20.1/src/JackDspSource.cpp
+===================================================================
+--- darkice-0.20.1.orig/src/JackDspSource.cpp	2010-05-07 16:06:51.000000000 +0200
++++ darkice-0.20.1/src/JackDspSource.cpp	2010-05-07 16:06:56.000000000 +0200
+@@ -76,6 +76,8 @@
+ #error need limits.h
+ #endif
+ 
++#include <climits>
++
+ #include "Util.h"
+ #include "Exception.h"
+ #include "JackDspSource.h"

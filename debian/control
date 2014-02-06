@@ -1,0 +1,22 @@
+Source: darkice
+Section: sound
+Priority: optional
+Maintainer: Jochen Friedrich <jochen@scram.de>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 7.0.50~), libvorbis-dev, libasound2-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libjack-dev, libtwolame-dev, autotools-dev
+Homepage: http://code.google.com/p/darkice/
+
+Package: darkice
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, lsb-base (>= 3.0-6)
+Suggests: darksnow
+Description: Live audio streamer
+ DarkIce is an IceCast, IceCast2 and ShoutCast live audio streamer. It
+ takes audio input from a sound card, encodes it into mp3 and/or Ogg
+ Vorbis, and sends the mp3 stream to one or more IceCast and/or
+ ShoutCast servers, the Ogg Vorbis stream to one or more IceCast2
+ servers. DarkIce uses lame as a shared object as its mp3 encoder, and
+ the Ogg Vorbis as its Ogg Vorbis encoder.
+ NOTE: The Debian version of DarkIce is only compiled with Ogg Vorbis 
+ support due to patent reasons and will therefore only work with IceCast2
+ servers!

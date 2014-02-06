@@ -1,0 +1,13 @@
+Index: darkice-0.20.1/src/IceCast2.cpp
+===================================================================
+--- darkice-0.20.1.orig/src/IceCast2.cpp	2010-05-07 16:06:49.000000000 +0200
++++ darkice-0.20.1/src/IceCast2.cpp	2010-05-07 16:07:05.000000000 +0200
+@@ -236,7 +236,7 @@
+         sink->write( str, strlen( str));
+     }
+ 
+-    str = "\n\n";
++    str = "\r\n\r\n";
+     sink->write( str, strlen( str));
+     sink->flush();
+ 

@@ -1,0 +1,22 @@
+diff -urNad darkice-0.19~/src/Util.cpp darkice-0.19/src/Util.cpp
+--- darkice-0.19~/src/Util.cpp	2007-02-25 17:38:33.000000000 +0100
++++ darkice-0.19/src/Util.cpp	2008-07-14 18:36:59.000000000 +0200
+@@ -81,6 +81,9 @@
+ #error need signal.h
+ #endif
+ 
++#ifdef HAVE_ERRNO_H
++#include <errno.h>
++#endif
+ 
+ #include "Util.h"
+ 
+@@ -278,7 +281,7 @@
+     }
+ 
+     val = strtod( str, &s);
+-    if ( s == str || val == HUGE_VAL ) {
++    if ( s == str || errno == ERANGE ) {
+         throw Exception( __FILE__, __LINE__, "number conversion error");
+     }
+ 
