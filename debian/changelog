@@ -2,7 +2,7 @@ RaspIce (1) stable; urgency=low
   
   * Darkice v1.2 that needs only mp3 encode lame and supports only icecast 2
      o all the unnecesscary packages related to streaming servers shoutcast etc., are removed and dependant encoders other than lame are removed
-     
+     o config files are tweaked and makefiles are rebuilded
 
 darkice (1.0-1) unstable; urgency=low
 
