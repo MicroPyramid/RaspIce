@@ -1,8 +1,8 @@
-raspice (1) stable; urgency=low
+raspice (1) STABLE; urgency=low
 
-  * Initial release. 
-  * files used are from darkice 1.2 
+  * Initial release.
+  * files used are from darkice 1.2
   * supports raspberry pi and plays only mp3 files and streams throughs icecast2 streaming server only
-  * all the unrelated streaming server files and library files are removed and few mods to run the package are added    
+  * all the unrelated streaming server files and library files are removed and few mods to run the package are added 
 
- -- <pi@raspberrypi>  Sat, 08 Feb 2014 12:02:49 +0530
+ --  <pi@raspberrypi>  Sat, 08 Feb 2014 07:11:56 +0000
