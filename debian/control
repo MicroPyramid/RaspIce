@@ -12,5 +12,4 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, lsb-base (>= 3.0-6)
 Suggests: darksnow
 Description: Live audio streamer
  raspice is an IceCast2 live audio streamer. It takes audio input from a sound card, encodes it into mp3 and sends the mp3 stream to one or more IceCast servers, DarkIce uses lame as a shared object as its mp3 encoder.
-
  NOTE: The Debian version of RaspIce is only compiled with lame support and therefore only work with IceCast2 servers!
