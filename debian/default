@@ -1,0 +1,12 @@
+# Defaults for darkice initscript
+# sourced by /etc/init.d/darkice
+# installed at /etc/default/darkice by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+RUN=no
+# Additional options that are passed to the Daemon.
+DAEMON_OPTS=""
+USER=nobody
+GROUP=nogroup

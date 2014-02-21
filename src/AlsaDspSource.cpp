@@ -82,7 +82,7 @@ AlsaDspSource :: init (  const char      * name )    throw ( Exception )
 {
     pcmName       = Util::strDup( name);
     captureHandle = 0;
-    bufferTime    = 1000000; // Do 1s buffering
+    bufferTime    = 3000000; // Do 1s buffering
     running       = false;
 }
 

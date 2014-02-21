@@ -1,0 +1,12 @@
+DarkIce for Debian
+----------------------
+
+This package was built with Ogg Vorbis support but without mp3 (lame)
+support for patent reasons.
+
+A sample configuration in installed into /usr/share/doc/darkice/examples.
+In order to use DarkIce, please copy this example to your preferred
+configuration directory, make any required changes for your site and reference
+it using darkice -c <config file>.
+
+Jochen Friedrich <jochen@scram.de>, Wed, 20 Aug 2003 21:02:26 +0200

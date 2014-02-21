@@ -1,0 +1,26 @@
+--- a/src/SerialUlaw.cpp
++++ b/src/SerialUlaw.cpp
+@@ -88,6 +88,10 @@
+ #error need termios.h
+ #endif
+ 
++#ifdef HAVE_STDIO_H
++#include <stdio.h>
++#endif
++
+ 
+ #include "Util.h"
+ #include "Exception.h"
+--- a/src/JackDspSource.cpp
++++ b/src/JackDspSource.cpp
+@@ -76,6 +76,10 @@
+ #error need limits.h
+ #endif
+ 
++#ifdef HAVE_STDIO_H
++#include <stdio.h>
++#endif
++
+ #include <climits>
+ 
+ #include "Util.h"
